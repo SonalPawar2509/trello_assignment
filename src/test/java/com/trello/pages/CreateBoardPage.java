@@ -87,13 +87,12 @@ public class CreateBoardPage extends PageBase {
 
     }*/
 
-    public void changeBGColor() throws InterruptedException {
+    public void changeBGColor(){
         waitTillElementVisible(changeColor_link);
         click(changeColor_link);
         waitTillElementVisible(colors_link);
         click(colors_link);
         click(selectColor);
-        wait(3000);
     }
 
 /*    public String getUserInfo() {
