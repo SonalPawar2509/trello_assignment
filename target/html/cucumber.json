@@ -1,0 +1,306 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 69220901,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Log in",
+        "description": "",
+        "id": "trello-website;log-in",
+        "after": [
+          {
+            "result": {
+              "duration": 404500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5793816301,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Launch browser with url \"trello.url\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "trello.url",
+                  "offset": 25
+                }
+              ],
+              "location": "TrelloSteps.launchBrowser(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4033784600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User log in with UserName \"user.email\" and password \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "user.email",
+                  "offset": 27
+                },
+                {
+                  "val": "password",
+                  "offset": 53
+                }
+              ],
+              "location": "TrelloSteps.logIn(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 84057200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User info should be displayed correctly",
+            "match": {
+              "location": "TrelloSteps.verifyUserInfo()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 945232301,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Logout the user",
+            "match": {
+              "location": "TrelloSteps.logoutUser()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 74059199,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "close the browser",
+            "match": {
+              "location": "TrelloSteps.terminateBrowser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 372800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Verify create board functionality",
+        "description": "",
+        "id": "trello-website;verify-create-board-functionality",
+        "after": [
+          {
+            "result": {
+              "duration": 1109300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4757558700,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Launch browser with url \"trello.url\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "trello.url",
+                  "offset": 25
+                }
+              ],
+              "location": "TrelloSteps.launchBrowser(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3989660401,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User log in with UserName \"user.email\" and password \"password\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "user.email",
+                  "offset": 27
+                },
+                {
+                  "val": "password",
+                  "offset": 53
+                }
+              ],
+              "location": "TrelloSteps.logIn(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 62184801,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User info should be displayed correctly",
+            "match": {
+              "location": "TrelloSteps.verifyUserInfo()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 103318300,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I click on Create Board",
+            "match": {
+              "location": "TrelloSteps.iClickOnCreateBoard()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 174642999,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I enter board name",
+            "match": {
+              "location": "TrelloSteps.iEnterBoardName()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1709647600,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I click on Create Board button",
+            "match": {
+              "location": "TrelloSteps.iClickOnCreateBoardButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 62332200,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I should be navigated to newly created board",
+            "match": {
+              "location": "TrelloSteps.iShouldBeNavigatedToNewlyCreatedBoard()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 755781801,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I create list",
+            "match": {
+              "location": "TrelloSteps.iCreateList()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 822750301,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I change background color",
+            "match": {
+              "location": "TrelloSteps.iChangeBackgroundColor()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2075430099,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 24,
+                "value": "#Then I verify user Info"
+              }
+            ],
+            "line": 25,
+            "name": "close the browser",
+            "match": {
+              "location": "TrelloSteps.terminateBrowser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 13,
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "trello website",
+    "description": "I want to use this feature to verify add/Edit board functionality",
+    "id": "trello-website",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/trello.feature"
+  }
+]
